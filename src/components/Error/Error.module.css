@@ -1,0 +1,29 @@
+.error {
+    position: relative;
+    
+    background-color: white;
+    margin: 0 auto;
+}
+
+.infoError {
+    position: relative;
+    top: 100px;
+}
+.title {
+    font-weight: 700;
+    font-size: 50px;
+}
+.infoError p {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.errorInfoImgText {
+    display: flex;
+    align-items: center;
+}
+
+.errorInfoImgText  img {
+width: 500px;
+}
+

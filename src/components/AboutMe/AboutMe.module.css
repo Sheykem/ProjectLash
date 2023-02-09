@@ -1,0 +1,94 @@
+.AboutMe {
+  grid-area: a;
+  background-color: #f2f3f4;
+  height: 800px;
+  position: relative;
+  padding-top: 20px;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  top: 25px;
+}
+h1 {
+  border-bottom: 1px solid black;
+  border-radius: 10px;
+  width: max-content;
+  margin: 0 auto;
+  padding: 5px;
+  background-color: #f2f3f4;
+  animation: text 3s 1;
+}
+
+.myInfo p {
+  margin-bottom: 30px;
+  font-size: 18px;
+  animation: textP 3s 1;
+}
+
+@keyframes text {
+  0% {
+    color: #f2f3f4;
+  }
+}
+
+@keyframes textP {
+  0% {
+    color: #f2f3f4;
+  }
+}
+
+.ItemFlex {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+
+@media (max-width: 1120px) {
+  .ItemFlex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .myPhoto img {
+    margin: 0 auto 50px ;
+  }
+  .AboutMe {
+    height: 1280px;
+  }
+  .myInfo{
+    margin-right: 0;
+  }
+}
+
+@media (max-width:400px){
+  .myInfo {
+    padding-left: 25px;
+  }
+  .AboutMe {
+    height: 1200px;
+  }
+}
+
+
+
+
+.myInfo {
+  align-self: center;
+  max-width: 350px;
+  margin-right: 50px;
+}
+.myInfo:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in-out;
+}
+
+.myPhoto img {
+  display: block;
+  position: relative;
+  top: 15px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 20px;
+  filter: drop-shadow(0px 0px 20px rgba(177, 88, 16, 0.7));
+}

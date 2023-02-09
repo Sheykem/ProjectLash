@@ -1,0 +1,100 @@
+.WhyChooseMe {
+  grid-area: w;
+  height: 900px;
+  background-color: #f6d7c7;
+  white-space: pre-wrap;
+}
+
+.title {
+  text-align: center;
+  position: relative;
+  margin-top: -10px;
+  top: 25px;
+  animation: title 4s;
+}
+
+.borderBottom {
+  position: relative;
+  bottom: 30px;
+  width: 100px;
+  border-bottom: 2px solid rgb(158, 113, 14);
+  margin: 0 auto;
+}
+
+.gridDivBlock {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-gap: 150px;
+  text-align: center;
+}
+
+@media (max-width:1050px){
+  .gridDivBlock {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+  .WhyChooseMe {
+    height: 1000px;
+  }
+}
+
+@media (max-width:700px){
+  .gridDivBlock {
+    grid-template-columns: 2fr;
+    grid-gap: 25px;
+    width: 400px;
+  }
+  .WhyChooseMe {
+    height: 1500px;
+  }
+}
+@media (max-width:580px){
+  .gridDivBlock {
+    grid-template-columns: 2fr;
+    margin-top: 25px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+}
+
+.gridDivBlock p {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.gridDivBlock img {
+  width: 150px;
+}
+.gridDivBlock div:hover {
+  filter: drop-shadow(0px 0px 40px rgba(70, 54, 1, 0.966));
+  transition: 0.9s ease-in-out;
+  transform: translateY(20px);
+  /* трансформ для того чтоб не съезжала вёрстка */
+}
+
+
+p {
+  animation: textP 3s;
+}
+
+@keyframes textP {
+  from {
+    margin-left: 100%;
+    width: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes title {
+  0% {
+    color: #f2f3f4;
+  }
+}

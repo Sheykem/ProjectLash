@@ -1,0 +1,159 @@
+.MyWorks {
+  height: 4000px;
+  background-color:white;
+}
+.workBtn {
+  width: 140px;
+  height: 50px;
+  background-color: rgb(218, 141, 78);
+  font-size: 18px;
+  border-radius: 15px;
+  position: fixed;
+  left: 50px;
+  top: 450px;
+  font-weight: 600;
+  color: white;
+}
+
+.workBtn a {
+  text-decoration: none;
+  color: white;
+}
+
+.workBtn:hover {
+  cursor: pointer;
+  background-color: blanchedalmond;
+  transition: 0.7s ease-in-out;
+  color: black;
+}
+.title {
+  text-align: center;
+  margin-top: 80px;
+  font-size: 28px;
+}
+.borderBottom {
+  position: relative;
+  bottom: 30px;
+  width: 100px;
+  border-bottom: 2px solid rgb(158, 113, 14);
+  margin: 0 auto;
+}
+
+.gridDivBlock {
+  margin-top: 10px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  opacity: 1;
+}
+
+.gridDivBlock div:hover img {
+  box-shadow: 0 0 0 5px rgb(158, 113, 14);
+  transition: 0.9s ease-in-out;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.work1 {
+  width: 365px;
+  height: 350px;
+  position: relative;
+  left: 50px;
+  cursor: pointer;
+}
+
+.work2 {
+  width: 365px;
+  height: 468px;
+  cursor: pointer;
+}
+.work3 {
+  width: 365px;
+  height: 350px;
+  position: relative;
+  right: 50px;
+  cursor: pointer;
+}
+.work4 {
+  width: 365px;
+  height: 468px;
+  position: relative;
+  bottom: 100px;
+  left: 50px;
+
+  cursor: pointer;
+}
+.work5 {
+  width: 365px;
+  height: 350px;
+  position: relative;
+  top: 20px;
+  cursor: pointer;
+}
+.work6 {
+  width: 365px;
+  height: 468px;
+  position: relative;
+  bottom: 100px;
+  right: 50px;
+
+  cursor: pointer;
+}
+
+.MyWorks h2 {
+  animation: title 4s;
+}
+
+@keyframes title {
+  0% {
+    color: #f2f3f4;
+  }
+}
+
+@media (max-width: 1800px) {
+  .MyWorks {
+    display: block;
+  }
+  .gridDivBlock {
+    grid-template-columns: 2fr 2fr;
+  }
+  .gridDivBlock img {
+    align-items: center;
+    grid-gap: 0px;
+    position: relative;
+    left: 0;
+  }
+}
+@media (max-width: 1080px) {
+  .MyWorks {
+    height: 4500px;
+  }
+  .gridDivBlock {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 200px;
+    bottom: 100px;
+  }
+
+  @media (max-width: 400px) {
+    .gridDivBlock  {
+      left: -260px;
+    }
+  }
+
+  .gridDivBlock img {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    left: 0;
+    top: 100px;
+  }
+  .workBtn {
+    display: none;
+  }
+}
+

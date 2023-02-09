@@ -1,0 +1,65 @@
+.multibutton {
+  z-index: 10000000;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  left: 20px;
+  bottom: 40px;
+  
+}
+
+.text {
+  background-color: #6705e671;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  height: max-content;
+  margin-left: 10px;
+}
+
+.text a {
+  color: white;
+  font-weight: 500;
+}
+
+.multibutton__button {
+  width: 70px;
+  height: 70px;
+  background: #7b519d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  animation: animation_button 3s linear infinite;
+  transition: all 200ms ease-out;
+}
+
+@keyframes animation_button {
+  0% {
+    box-shadow: 0 0 0 0 #6931d1, 0 0 0 0 rgba(68, 23, 139, 0.7);
+  }
+  40% {
+    box-shadow: 0 0 0 13.62667px rgba(255, 186, 38, 0), 0 0 0 6.81333px rgba(69, 26, 117, 0.7);
+  }
+  80% {
+    box-shadow: 0 0 0 27.25333px rgba(255, 186, 38, 0), 0 0 0 13.62667px rgba(255, 206, 9, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 34.06667px rgba(255, 186, 38, 0), 0 0 0 27.25333px rgba(255, 206, 9, 0);
+  }
+}
+
+.multibutton__button svg {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.multibutton__icon svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}

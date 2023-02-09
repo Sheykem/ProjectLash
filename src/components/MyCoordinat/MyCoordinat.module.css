@@ -1,0 +1,81 @@
+.MyCoordinat {
+  grid-area: m;
+  height: 750px;
+  background-color: #f2f3f4;
+}
+
+@media(max-width:1400px){
+  .flashingBtn {
+    position: relative;
+    bottom: 55px;
+  }
+}
+
+@media(max-width:500px){
+  .MyCoordinat {
+    height: 150px;
+  }
+  .map img  {
+    display: none;
+  }
+  .flashingBtn {
+    position: relative;
+    bottom: 25px;
+  }
+}
+.map {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.map img {
+  height: 650px;
+}
+
+.borderBottom {
+  position: relative;
+  bottom: 30px;
+  width: 100px;
+  border-bottom: 2px solid rgb(158, 113, 14);
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+.flashingBtn {
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #f6d7c7;
+  padding: 15px;
+  border-radius: 15px;
+  animation: glowing 1300ms infinite;
+  cursor: pointer;
+  position: relative;
+  bottom: 35px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+@keyframes glowing {
+  0% {
+    background-color: #a86105;
+    box-shadow: 0 0 5px #a85405;
+  }
+  50% {
+    background-color: #e28306;
+    box-shadow: 0 0 20px #a85405;
+  }
+  100% {
+    background-color: #fcaf0a;
+    box-shadow: 0 0 5px #a85405;
+  }
+
+}

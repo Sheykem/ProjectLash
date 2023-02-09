@@ -1,0 +1,18 @@
+.scrollUp {
+  position: fixed;
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 100px;
+  z-index: 100000;
+  bottom: 50px;
+  right: 50px;
+}
+
+@media (max-width:400px){
+  .scrollUp{
+    padding-left: 35px;
+  }
+}

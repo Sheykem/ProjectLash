@@ -1,0 +1,47 @@
+.Footer {
+  grid-area: f;
+  height: 100px;
+  background-color: #130f23;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+margin-top: 10px;
+}
+
+.Footer div {
+  margin: 0px 80px 0px 80px;
+}
+
+.Footer img {
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+
+.number {
+  margin-top: 5px;
+  position: relative;
+  right: 30px;
+  color: white;
+}
+
+
+@media(max-width:864px){
+  .insta {
+    display: none;
+  }
+}
+
+@media(max-width:400px){
+.adress {
+  padding-top: 45px;
+}
+.myAdress{
+  position: relative;
+  right: 80px;
+  top: 5px;
+}
+}
