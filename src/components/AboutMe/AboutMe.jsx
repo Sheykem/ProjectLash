@@ -44,7 +44,7 @@ const AboutMe = () => {
               </p>
             </div>
             <div className={s.myPhoto}>
-              <img src="/img/MyPhoto2.jpg" alt="MyPhoto" />
+              <img src="/img/myPhoto.jpg" alt="MyPhoto" />
             </div>
           </div>
           <div className={s.btnFunctional}>
