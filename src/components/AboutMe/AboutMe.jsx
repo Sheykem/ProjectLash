@@ -18,7 +18,7 @@ const AboutMe = () => {
       ) : (
         <>
           <div className={s.title}>
-            <h1>Cтудия Lash Lux</h1>
+            <h1>Cтудия Alines lash</h1>
           </div>
           <div className={s.ItemFlex}>
             <div className={s.myInfo}>
