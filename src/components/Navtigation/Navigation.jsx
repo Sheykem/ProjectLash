@@ -8,7 +8,7 @@ const Navigation = (props) => {
     const target = event.target.getAttribute('data-target');
     const el = document.querySelector(target);
     if (el) {
-      window.scrollBy({
+      window.scrollTo({
         top: el.offsetTop,
         behavior: 'auto',
       });
@@ -18,12 +18,12 @@ const Navigation = (props) => {
   const { pathname, hash } = useLocation();
   useEffect(() => {
     if (pathname !== '/') {
-      window.scrollBy(0, 0);
+      window.scrollTo(0, 0);
     }
     if (pathname === '/' && hash !== '') {
       const el = document.querySelector(hash);
       if (el) {
-        window.scrollBy({
+        window.scrollTo({
           top: el.offsetTop,
           behavior: 'smooth',
         });

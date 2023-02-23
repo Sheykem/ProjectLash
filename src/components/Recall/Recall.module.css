@@ -2,6 +2,7 @@
   grid-area: r;
   height: 950px;
   background-color: #f6d7c7;
+  margin-top: 100px;
 }
 
 @media (max-width: 1800px) {
