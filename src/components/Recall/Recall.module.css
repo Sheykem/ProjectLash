@@ -4,9 +4,9 @@
   background-color: #f6d7c7;
 }
 
-@media (min-width: 1800px) {
+@media (max-width: 1800px) {
   .Recall {
-    margin-top: 100px;
+  height: 780px;
   }
 }
 
