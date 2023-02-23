@@ -33,27 +33,27 @@ const Navigation = (props) => {
       <div className={s.navMenu}>
         <ul className={s.navList}>
           <li className={s.ListItem}>
-            <NavLink to="/#services">Услуги</NavLink>
+            <a href="/#services">Услуги</a>
           </li>
           <li className={s.ListItem}>
-            <NavLink to="/#price">Цены</NavLink>
+            <a href="/#price">Цены</a>
           </li>
 
           <li className={s.ListItem}>
-            <NavLink to="/#recall">
+            <a href="/#recall">
               Отзывы
-            </NavLink>
+            </a>
           </li>
           <li className={s.ListItem}>
-            <NavLink to="/#map" >
+            <a href="/#map" >
               Как добраться
-            </NavLink>
+            </a>
           </li>
           <li className={s.ListItem}>
-            <NavLink to="/works">Работы</NavLink>
+            <a href="/works">Работы</a>
           </li>
           <li className={s.ListItem}>
-            <NavLink to="/study">Обучение</NavLink>
+            <a href="/study">Обучение</a>
           </li>
         </ul>
       </div>
