@@ -77,6 +77,13 @@
 }
 
 
+@media(max-width:700px){
+  .gridDivBlock div:hover{
+    transform: none;
+    transition: none;
+  }
+}
+
 p {
   animation: textP 3s;
 }
