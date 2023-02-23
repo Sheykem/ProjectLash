@@ -10,7 +10,7 @@ const Navigation = (props) => {
     if (el) {
       window.scrollTo({
         top: el.offsetTop,
-        behavior: 'smooth',
+        behavior: 'auto',
       });
     }
   };
@@ -25,7 +25,7 @@ const Navigation = (props) => {
       if (el) {
         window.scrollTo({
           top: el.offsetTop,
-          behavior: 'smooth',
+          behavior: 'auto',
         });
         window.location.hash = '';
       }
