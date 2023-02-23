@@ -8,7 +8,7 @@ const Navigation = (props) => {
     const target = event.target.getAttribute('data-target');
     const el = document.querySelector(target);
     if (el) {
-      window.scrollTo({
+      window.scrollBy({
         top: el.offsetTop,
         behavior: 'auto',
       });
@@ -17,10 +17,13 @@ const Navigation = (props) => {
 
   const { pathname, hash } = useLocation();
   useEffect(() => {
+    if (pathname !== '/') {
+      window.scrollBy(0, 0);
+    }
     if (pathname === '/' && hash !== '') {
       const el = document.querySelector(hash);
       if (el) {
-        window.scrollTo({
+        window.scrollBy({
           top: el.offsetTop,
           behavior: 'smooth',
         });
@@ -33,27 +36,27 @@ const Navigation = (props) => {
       <div className={s.navMenu}>
         <ul className={s.navList}>
           <li className={s.ListItem}>
-            <a href="/#services">Услуги</a>
+            <NavLink to="/#services">Услуги</NavLink>
           </li>
           <li className={s.ListItem}>
-            <a href="/#price">Цены</a>
+            <NavLink to="/#price">Цены</NavLink>
           </li>
 
           <li className={s.ListItem}>
-            <a href="/#recall">
+            <NavLink to="/#recall">
               Отзывы
-            </a>
+            </NavLink>
           </li>
           <li className={s.ListItem}>
-            <a href="/#map" >
+            <NavLink to="/#map" >
               Как добраться
-            </a>
+            </NavLink>
           </li>
           <li className={s.ListItem}>
-            <a href="/works">Работы</a>
+            <NavLink to="/works">Работы</NavLink>
           </li>
           <li className={s.ListItem}>
-            <a href="/study">Обучение</a>
+            <NavLink to="/study">Обучение</NavLink>
           </li>
         </ul>
       </div>
