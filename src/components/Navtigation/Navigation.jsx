@@ -10,7 +10,7 @@ const Navigation = (props) => {
     if (el) {
       window.scrollTo({
         top: el.offsetTop,
-        behavior: 'auto',
+        behavior: 'smooth',
       });
     }
   };
@@ -22,12 +22,13 @@ const Navigation = (props) => {
     }
     if (pathname === '/' && hash !== '') {
       const el = document.querySelector(hash);
+      console.log(hash);
       if (el) {
         window.scrollTo({
           top: el.offsetTop,
           behavior: 'smooth',
         });
-        window.location.hash = '';
+        // window.location.hash = '';
       }
     }
   }, [pathname, hash]);
