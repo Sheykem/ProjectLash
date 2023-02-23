@@ -81,6 +81,7 @@
   .gridDivBlock div:hover{
     transform: none;
     transition: none;
+    filter: none;
   }
 }
 
