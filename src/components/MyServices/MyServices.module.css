@@ -26,10 +26,9 @@
   display: grid;
   grid-template-columns: 2fr 2fr 2fr 2fr;
   grid-gap: 50px;
-
 }
 
-@media (max-width:1300px){
+@media (max-width: 1300px) {
   .gridBlockDiv {
     grid-template-columns: 2fr 2fr 2fr;
     margin: 0 auto;
@@ -39,7 +38,7 @@
   }
 }
 
-@media (max-width:1220px){
+@media (max-width: 1220px) {
   .gridBlockDiv {
     grid-template-columns: 2fr 2fr;
     grid-gap: 25px;
@@ -50,7 +49,7 @@
     height: 1100px;
   }
 }
-@media (max-width:950px){
+@media (max-width: 950px) {
   .gridBlockDiv {
     grid-template-columns: 2fr;
     margin: 0 auto;
@@ -59,7 +58,6 @@
     height: 2100px;
   }
 }
-
 
 .gridBlockDiv p {
   font-weight: 600;
@@ -79,15 +77,24 @@
   color: lightsalmon;
 }
 
-
-
 .gridBlockDiv div:hover p {
   font-size: 20px;
 }
 
-@media(max-width:700px){
+@media (max-width: 700px) {
+  .gridBlockDiv:hover {
+    transition: none;
+    transform: none;
+  }
   .gridBlockDiv div:hover {
     transition: none;
     transform: none;
+  }
+  .gridBlockDiv div:hover p {
+    font-size: 18px;
+    color: black;
+  }
+  .gridBlockDiv img {
+    filter: none;
   }
 }
