@@ -17,15 +17,12 @@ const Navigation = (props) => {
 
   const { pathname, hash } = useLocation();
   useEffect(() => {
-    if (pathname !== '/') {
-      window.scrollTo(0, 0);
-    }
     if (pathname === '/' && hash !== '') {
       const el = document.querySelector(hash);
       if (el) {
         window.scrollTo({
           top: el.offsetTop,
-          behavior: 'auto',
+          behavior: 'smooth',
         });
         window.location.hash = '';
       }
