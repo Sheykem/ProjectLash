@@ -1,0 +1,63 @@
+@import '~react-image-gallery/styles/css/image-gallery.css';
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.app-wrapper {
+  font-family: 'Raleway', sans-serif;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-areas:
+    'h'
+    'n'
+    'a'
+    'w'
+    's'
+    'p'
+    'i'
+    'r'
+    'm'
+    'f';
+}
+
+.app-wrapper-content {
+  min-height: 100%;
+  margin-bottom: -50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#recall .image-gallery-image {
+  object-fit: scale-down !important;
+}
+
+img {
+  user-select: none;
+}
+
+@media (max-width: 1400px) {
+  .app-wrapper {
+    display: block;
+  }
+  .app-wrapper-content {
+    display: block;
+    overflow-x: hidden;
+  }
+}
+
+.image-gallery-fullscreen-button  {
+display: none;
+}
