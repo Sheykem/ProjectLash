@@ -18,7 +18,7 @@ const AboutMe = () => {
       ) : (
         <>
           <div className={s.title}>
-            <h1>Cтудия Alines lash</h1>
+            <h1>Cтудия Lash Lux</h1>
           </div>
           <div className={s.ItemFlex}>
             <div className={s.myInfo}>
@@ -44,7 +44,7 @@ const AboutMe = () => {
               </p>
             </div>
             <div className={s.myPhoto}>
-              <img src="/img/myPhoto.jpg" alt="MyPhoto" />
+              <img src="/img/MyPhoto2.jpg" alt="MyPhoto" />
             </div>
           </div>
           <div className={s.btnFunctional}>

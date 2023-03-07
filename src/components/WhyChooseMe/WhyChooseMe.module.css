@@ -31,7 +31,7 @@
   text-align: center;
 }
 
-@media (max-width:1050px){
+@media (max-width: 1050px) {
   .gridDivBlock {
     grid-template-columns: 1fr 1fr;
     grid-gap: 25px;
@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width:700px){
+@media (max-width: 700px) {
   .gridDivBlock {
     grid-template-columns: 2fr;
     grid-gap: 25px;
@@ -51,14 +51,13 @@
     height: 1500px;
   }
 }
-@media (max-width:580px){
+@media (max-width: 580px) {
   .gridDivBlock {
     grid-template-columns: 2fr;
     margin-top: 25px;
     position: relative;
     margin: 0 auto;
   }
-
 }
 
 .gridDivBlock p {
@@ -74,16 +73,6 @@
   transition: 0.9s ease-in-out;
   transform: translateY(20px);
   /* трансформ для того чтоб не съезжала вёрстка */
-}
-
-
-@media(max-width:700px){
-  .gridDivBlock div:hover{
-    transform: none;
-    transition: none;
-    filter: none;
-    animation: none;
-  }
 }
 
 p {

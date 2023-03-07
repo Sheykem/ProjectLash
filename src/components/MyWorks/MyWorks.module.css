@@ -40,16 +40,12 @@
 }
 
 .gridDivBlock {
-  /* border: 1px solid red;
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 3; */
   margin-top: 10px;
   margin-left: 300px;
   margin-right: 300px;
   text-align: center;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr;
   opacity: 1;
 }
 
@@ -61,7 +57,6 @@
 }
 
 .work1 {
-  /* margin: 0.5rem; */
   width: 365px;
   height: 350px;
   position: relative;
@@ -70,15 +65,11 @@
 }
 
 .work2 {
-  /* margin: 0.5rem; */
-
   width: 365px;
   height: 468px;
   cursor: pointer;
 }
 .work3 {
-  /* margin: 0.5rem; */
-
   width: 365px;
   height: 350px;
   position: relative;
@@ -86,8 +77,6 @@
   cursor: pointer;
 }
 .work4 {
-  /* margin: 0.5rem; */
-
   width: 365px;
   height: 468px;
   position: relative;
@@ -97,8 +86,6 @@
   cursor: pointer;
 }
 .work5 {
-  /* margin: 0.5rem; */
-
   width: 365px;
   height: 350px;
   position: relative;
@@ -106,8 +93,6 @@
   cursor: pointer;
 }
 .work6 {
-  margin: 0.5rem;
-
   width: 365px;
   height: 468px;
   position: relative;
@@ -132,12 +117,11 @@
     display: block;
   }
   .gridDivBlock {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 2fr;
   }
-
   .gridDivBlock img {
     align-items: center;
-    grid-gap: 10px;
+    grid-gap: 0px;
     position: relative;
     left: 0;
   }

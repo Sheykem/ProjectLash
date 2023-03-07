@@ -22,13 +22,12 @@ const Navigation = (props) => {
     }
     if (pathname === '/' && hash !== '') {
       const el = document.querySelector(hash);
-      console.log(hash);
       if (el) {
         window.scrollTo({
           top: el.offsetTop,
           behavior: 'smooth',
         });
-        // window.location.hash = '';
+        window.location.hash = '';
       }
     }
   }, [pathname, hash]);
@@ -44,14 +43,10 @@ const Navigation = (props) => {
           </li>
 
           <li className={s.ListItem}>
-            <NavLink to="/#recall">
-              Отзывы
-            </NavLink>
+            <NavLink to="/#recall">Отзывы</NavLink>
           </li>
           <li className={s.ListItem}>
-            <NavLink to="/#map" >
-              Как добраться
-            </NavLink>
+            <NavLink to="/#map">Как добраться</NavLink>
           </li>
           <li className={s.ListItem}>
             <NavLink to="/works">Работы</NavLink>

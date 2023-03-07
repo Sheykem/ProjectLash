@@ -12,7 +12,7 @@ const Footer = () => {
         <p>+38(050)279-31-68</p>
       </div>
       <div className={s.insta}>
-        <a target='blank'  href="https://instagram.com/alines_lash?igshid=YmMyMTA2M2Y=">
+        <a target='_blank'  href="https://instagram.com/alines_lash?igshid=YmMyMTA2M2Y=">
           <img src="/img/MyIcon/insta2.png" alt="" />
           <p className={s.number}>063 841-30-90</p>
         </a>

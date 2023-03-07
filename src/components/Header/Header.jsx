@@ -57,9 +57,9 @@ const Header = () => {
             </p>
           </div>
           <p className={s.insta}>
-            <img src="/img/MyIcon/insta.png" alt="Icon" />
+            <img src="/img/MyIcon/insta.png" alt="Photo" />
             <strong>Instagram: </strong>
-            <a target='blank'  href="https://instagram.com/alines_lash?igshid=YmMyMTA2M2Y=">alines_lash</a>
+            <a target='_blank'  href="https://instagram.com/alines_lash?igshid=YmMyMTA2M2Y=">alines_lash</a>
           </p>
         </div>
       )}

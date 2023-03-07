@@ -48,7 +48,6 @@
     position: relative;
     margin: 0 auto;
   }
-
   .navigation {
     background-color: #f6d7c7;
     position: relative;
@@ -56,9 +55,6 @@
   .ListItem {
     padding-bottom: 20px;
     font-weight: 600;
-  }
-  .ListItem a::after {
-    display: none;
   }
 }
 .ListItem a {

@@ -83,13 +83,6 @@ h1 {
   transition: 0.5s ease-in-out;
 }
 
-@media(max-width:700px){
-  .myInfo:hover {
-    transform: none;
-    transition: none;
-  }
-}
-
 .myPhoto img {
   display: block;
   position: relative;

@@ -24,8 +24,8 @@
   }
 }
 
-@media (max-width:650px){
-  .sliderBtn{
+@media (max-width: 650px) {
+  .sliderBtn {
     bottom: 40px;
   }
   span {
@@ -33,12 +33,12 @@
   }
 }
 
-@media (max-width:375px){
-  .sliderBtn{
+@media (max-width: 375px) {
+  .sliderBtn {
     bottom: 70px;
     right: 20px;
   }
-  .text  span {
+  .text span {
     font-size: 12px;
   }
   .title {
@@ -47,10 +47,9 @@
   p {
     position: relative;
     bottom: 25px;
+    font-size: 14px;
   }
-
 }
-
 
 .text p {
   margin-top: 10px;
