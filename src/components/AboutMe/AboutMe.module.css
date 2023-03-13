@@ -51,17 +51,17 @@ h1 {
     flex-direction: column-reverse;
   }
   .myPhoto img {
-    margin: 0 auto 50px ;
+    margin: 0 auto 50px;
   }
   .AboutMe {
     height: 1280px;
   }
-  .myInfo{
+  .myInfo {
     margin-right: 0;
   }
 }
 
-@media (max-width:400px){
+@media (max-width: 400px) {
   .myInfo {
     padding-left: 25px;
   }
@@ -70,8 +70,12 @@ h1 {
   }
 }
 
-
-
+@media (max-width: 700px) {
+  .myInfo:hover {
+    transform: none;
+    transition: none;
+  }
+}
 
 .myInfo {
   align-self: center;
